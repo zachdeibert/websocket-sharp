@@ -539,7 +539,7 @@ namespace WebSocketSharp.Net
         throw new ArgumentException (
           "The number of elements in this collection is greater than the available space of the destination array.");
 
-      if (!array.GetType ().GetElementType ().GetTypeInfo().IsAssignableFrom(typeof (Cookie)))
+      if (!array.GetType ().GetElementType ().GetTypeInfo().IsAssignableFrom(typeof (Cookie).GetTypeInfo ()))
         throw new InvalidCastException (
           "The elements in this collection cannot be cast automatically to the type of the destination array.");
 

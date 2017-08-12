@@ -14,7 +14,7 @@ namespace Helpers
             {
                 return AsyncHelpers.RunSync(() => task);
             }
-            catch (Exception x)
+            catch (Exception)
             {
                 throw task.Exception;
             }
@@ -25,7 +25,7 @@ namespace Helpers
             {
                 AsyncHelpers.RunSync(() => task);
             }
-            catch (Exception x)
+            catch (Exception)
             {
                 throw task.Exception;
             }
