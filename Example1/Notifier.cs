@@ -62,7 +62,7 @@ namespace Example1
     {
       _enabled = false;
       _exited.WaitOne ();
-      _exited.Close ();
+      _exited.Dispose ();
     }
 
     public void Notify (NotificationMessage message)
