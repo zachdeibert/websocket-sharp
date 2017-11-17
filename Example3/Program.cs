@@ -1,5 +1,4 @@
 using System;
-using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using WebSocketSharp;
@@ -82,7 +81,7 @@ namespace Example3
       //httpsv.ReuseAddress = true;
 
       // Set the document root path.
-      httpsv.RootPath = ConfigurationManager.AppSettings["RootPath"];
+      //httpsv.RootPath = ConfigurationManager.AppSettings["RootPath"];
 
       // Set the HTTP GET request event.
       httpsv.OnGet += (sender, e) => {
